@@ -62,7 +62,7 @@ class Spellchecker : public Nan::ObjectWrap {
   static NAN_METHOD(SetDictionary) {
     Nan::HandleScope scope;
 
-    if (info.Length() < 2) {
+    if (info.Length() < 1) {
       return Nan::ThrowError("Bad arguments");
     }
 
